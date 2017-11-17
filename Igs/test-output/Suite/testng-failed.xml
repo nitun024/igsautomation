@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="ExecutionType" value="Regression"/>
+  <listeners>
+    <listener class-name="com.vaticahealth.vatica.config.VaticaListener"/>
+  </listeners>
+  <test name="Test of Diagnosis Suite(failed)">
+    <classes>
+      <class name="com.vaticahealth.vatica.testsuits.DiagnosisSuite">
+        <methods>
+          <include name="getResult"/>
+          <include name="tc_Diagnosis_13"/>
+          <include name="tc_Diagnosis_24"/>
+          <include name="tc_Diagnosis_16"/>
+          <include name="invokeUrl"/>
+          <include name="setUpBeforeEveryTest"/>
+          <include name="tc_Diagnosis_5"/>
+          <include name="tc_Diagnosis_2"/>
+          <include name="tc_Diagnosis_10"/>
+          <include name="tc_Diagnosis_21"/>
+          <include name="tc_Diagnosis_20"/>
+          <include name="tc_Diagnosis_23"/>
+          <include name="tc_Diagnosis_22"/>
+          <include name="tc_Diagnosis_6"/>
+        </methods>
+      </class> <!-- com.vaticahealth.vatica.testsuits.DiagnosisSuite -->
+      <class name="com.vaticahealth.vatica.testsuits.SnapshotSuite">
+        <methods>
+          <include name="invokeUrl"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.vaticahealth.vatica.testsuits.SnapshotSuite -->
+    </classes>
+  </test> <!-- Test of Diagnosis Suite(failed) -->
+  <test name="Test of Snaphot Suite(failed)">
+    <classes>
+      <class name="com.vaticahealth.vatica.testsuits.DiagnosisSuite">
+        <methods>
+          <include name="getResult"/>
+          <include name="invokeUrl"/>
+          <include name="setUpBeforeEveryTest"/>
+        </methods>
+      </class> <!-- com.vaticahealth.vatica.testsuits.DiagnosisSuite -->
+      <class name="com.vaticahealth.vatica.testsuits.SnapshotSuite">
+        <methods>
+          <include name="tc_Snapshot_3"/>
+          <include name="invokeUrl"/>
+          <include name="startReport"/>
+          <include name="tc_Snapshot_1"/>
+          <include name="tc_Snapshot_2"/>
+        </methods>
+      </class> <!-- com.vaticahealth.vatica.testsuits.SnapshotSuite -->
+    </classes>
+  </test> <!-- Test of Snaphot Suite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

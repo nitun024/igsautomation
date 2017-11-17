@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="ExecutionType" value="Regression"></parameter>
+	<listeners>
+		<listener class-name="com.vaticahealth.vatica.config.VaticaListener" />
+	</listeners>
+	<test name="Test of Login Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.LoginSuite" />
+		</classes>
+	</test>
+	<test name="Test of Create Hra Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.CreateHraTestSuite" />
+		</classes>
+	</test>
+	<test name="Test of Provider Home Page Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.PHPSuite" />
+		</classes>
+	</test>
+	<test name="Test of PPP Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.PPPSuite" />
+		</classes>
+	</test>
+	<test name="Test of Diagnosis Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.DiagnosisSuite" />
+		</classes>
+	</test>
+	<test name="Test of Snapshot Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.SnapshotSuite" />
+		</classes>
+	</test>
+	<test name="Test of Trainning Resources Suite">
+		<classes>
+			<class name="com.vaticahealth.vatica.testsuits.TrainningResourcesSuite" />
+		</classes>
+	</test>
+</suite>
+	

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.vaticahealth.vatica.testcases.SmokeTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="invokeUrl"/>
+          <include name="startReport"/>
+          <include name="sendTestReport"/>
+          <include name="homePage_VerifyHomeCategories"/>
+          <include name="setUpBeforeEveryTest"/>
+        </methods>
+      </class> <!-- com.vaticahealth.vatica.testcases.SmokeTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
